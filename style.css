@@ -10,6 +10,7 @@ img {
   width: 90px;
   object-fit: cover;
   border-radius: 8px;
+  object-fit: contain;
 }
 
 body {
