@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #10580b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  
+  position: fixed;
+  top: 0;
+  left: 0; 
+  z-index: 1000;
+
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #11d537;
+  line-height: 1.1;
+}
+
+
+
+
+
+.navlinks {
+  display: flex;
+  gap: 8px;
+}
+
+.navlinks a {
+  color: white;
+  background-color: #31a252;
+  font-weight: bold;
+  padding: 10px;
+  height: 60px;
+  width: 120px;
+  border: solid 2px orange;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.navlinks a:hover {
+  background-color: #268040;
+  border-color: #ff9f1a;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* CONTAINER DOS PERFIS */
+#container {
+  display: grid;
+  width: 98%;
+  gap: 10px;
+  
+
+  .card-perfil {
+  background-color: #cedcb3;
+  border: 2px solid #10580b;
+  border-radius: 12px;
+  padding: 15px;
+  
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  
+  transition: transform 0.2s ease;
+  
+}
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  margin-top: 120px;
+  padding: 10px;
+  
+}
+
+
+
+
+/* CARD INDIVIDUAL  */
+.card-perfil {
+  background-color: #cedcb3;
+  border: 2px solid #10580b;
+  border-radius: 12px;
+  padding: 15px;
+  
+  /* Ativa as duas colunas internas */
+  display: flex; 
+  align-items: center; 
+  gap: 15px;
+  
+  transition: transform 0.2s ease;
+  
+}
+
+
+
+.card-perfil:hover {
+  transform: scale(1.05);
+  
+  
+  
+  
+}
+
+
+
+/* COLUNA 1: A FOTO */
+.perfil-foto img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #31a252;
+}
+
+
+
+/* COLUNA 2: O TEXTO/NOME */
+.perfil-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+
+.perfil-info h3 {
+  color: #10580b;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+
+
+.perfil-info p {
+  color: #555555;
+  font-size: 0.9rem;
+}
