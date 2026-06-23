@@ -46,14 +46,22 @@
 
 
 .navbar {
+  color: white;
+  background-color: #31a252;
+  font-weight: bold;
+  padding: 10px;
+  height: 60px;
+  width: 120px;
+  border: solid 2px orange;
+  border-radius: 5px;
+  text-decoration: none;
   display: flex;
-  width: 100vw;
-  height: 100px;
-  background-color: #10580b;
   align-items: center;
-  justify-content: space-between;
-  padding: 15px 20px;
-  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
   
 }
 
